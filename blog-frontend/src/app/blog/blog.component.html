@@ -1,0 +1,26 @@
+<div *ngFor="let i of blogs" >
+    <h3>Title: {{i.title}}</h3>
+    <h5>Date: {{i.date}}</h5>
+   
+    <p id="para" style="width: 500px;"> {{i.content}} <div>
+        
+        <button class="btn btn-warning" style="cursor:pointer"  (click)="likeIncrease(i)">Like</button>
+        &NonBreakingSpace; <span style="font-weight: bold;">{{i.likes}} </span>Likes
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-warning" style="cursor:pointer" style="text-align: right;">Share</button>
+    </div>
+
+   <div style="font-weight: bold;">Comments:</div>
+    <div class="card-body row">
+        <div class="col-1">
+            <img src="assets/img/sign.png" style="width: 50px; height: 50px;"/>
+        </div>
+        <div class="col-11">
+        <h5 class="card-title" style="color: #672737;">{{i.name}}</h5>
+        <p class="card-text" style="color: #000;">{{i.comment}}</p>
+        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        </div>
+</div>       
+                    
+    </div>
+   

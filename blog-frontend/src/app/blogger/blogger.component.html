@@ -1,0 +1,11 @@
+
+<div   *ngFor="let i of blogs" >
+    <p style="font-size: larger; font-weight: bold; text-align: center;">{{i.author}}</p>
+ 
+    <img class="img-thumbnail rounded-circle border-primary" src="assets/img/author.jpg" alt="Card image cap" style="background-color: #b4434e; ">
+    
+    <br><br>
+    <button class="btn btn-warning" style="cursor:pointer" (click)="followCount(i)">Follow</button>  
+  
+    &nbsp;<span style="text-decoration: bold; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">{{i.follow}}</span> Followers 
+  </div>
